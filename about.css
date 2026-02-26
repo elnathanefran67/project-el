@@ -196,18 +196,18 @@ span:hover{
     }
     .one p, .two p, .three p{
         display: flex;
-        margin-left: -8px;
+        margin-left: -15px;
     }
     .one h3, .two h3, .three h3{
-        margin-left: -8px;
+        margin-left: -15px;
         display: flex;
     }
     .one, .two, .three{
         width: 100%;
         flex-wrap: wrap;
     }
-    .one h1{
-        margin-left: -13px;
+    .one h1, .two h1, .three h1{
+        margin-left: -20px;
     }
     .out{
         overflow: scroll;

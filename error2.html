@@ -111,17 +111,7 @@
             border: none;
             cursor: pointer;
         }
-        .im{
-            width: 50%;
-            display: flex;
-            justify-content: space-between;
-        }
-        .im img{
-            width: 20%;
-            height: 5vh;
-            filter: grayscale();
-            cursor: pointer;
-        }
+        
         @media(max-width:376px){
             .bks{
                 width: 100%;
@@ -197,14 +187,8 @@
             </div>
             <div class="me">
                 <h1>FOLLOW ME</h1><br>
-                <p>Let us be social</p>
+                <p>Let us be social in <span onclick="goToTwitter()" style="font-weight: bold; text-decoration: underline; cursor: pointer; font-size: 20px;">Twitter</span>, <span onclick="goToWhatsapp()" style="font-weight: bold; text-decoration: underline; cursor: pointer; font-size: 20px;">Whatsapp</span>, <span onclick="goToFacebook()" style="font-weight: bold; text-decoration: underline; cursor: pointer; font-size: 20px;">Facebook</span>, and <span onclick="goToInstagram" style="font-weight: bold; text-decoration: underline; cursor: pointer; font-size: 20px;">Instagram</span></p>
                 <p style="visibility: hidden;">W</p>
-                <div class="im">
-                    <img src="twitter.png" alt="" onclick="goToTwitter()">
-                    <img src="instagram.png" alt="" onclick="goToInstagram()">
-                    <img src="facebook.png" alt="" onclick="goToFacebook()">
-                    <img src="whatsapp.png" alt="" onclick="goToWhatsapp()">
-                </div>
             </div>
         </div>
     </div>
