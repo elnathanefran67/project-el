@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 not founded</title>
+    <link rel="shortcut icon" href="c:\Users\dell\Documents\koding\icon\computer.png">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: monospace;
+        }
+        .out{
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(white, rgb(203, 203, 203), grey);
+        }
+        .bks{
+            width: 60%;
+            height: 40vh;
+            box-shadow: 10px 5px 100px 15px grey;
+            text-align: center;
+            font-size: 26px;
+        }
+        .b button{
+            border-radius: 15px;
+            width: 50%;
+            transition: ease-in-out;
+        }
+        .o button{
+            background: linear-gradient(to right, black, rgb(34, 34, 34));
+            color: white;
+            font-size: 20px;
+            width: 125px;
+            height: 60px;
+            transition: ease-in-out;
+        }
+        .o button:hover{
+            transform: scale(1.2);
+            transition: 0.15s ease-in-out;
+        }
+        .l button{
+            background: linear-gradient(to right, white, rgb(195, 195, 195));
+            border: none;
+            font-size: 20px;
+            width: 125px;
+            height: 60px;
+        }
+        .l button:hover{
+            transform: scale(1.2);
+            transition: 0.15s ease-in-out;
+        }
+        .b{
+            width: 35%;
+            height: 10vh;
+            justify-self: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .outa{
+            width: 100%;
+            height: 30vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .outa p{
+            color: grey;
+        }
+        .bksouta{
+            width: 80%;
+            height: 25vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .about{
+            width: 38%;
+            height: 25vh;
+            text-align: start;
+            color: white;
+        }
+        .letter{
+            width: 33%;
+            height: 25vh;
+            text-align: start;
+            color: white;
+        }
+        .me{
+            width: 28%;
+            height: 25vh;
+            text-align: start;
+            color: white;
+        }
+        .letter input{
+            width: 70%;
+            height: 4.5vh;
+            border: none;
+        }
+        .letter button{
+            width: 10%;
+            height: 4.5vh;
+            background: linear-gradient(to right,  magenta, cyan);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .im{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .im img{
+            width: 20%;
+            height: 5vh;
+            filter: grayscale();
+            cursor: pointer;
+        }
+        @media(max-width:376px){
+            .bks{
+                width: 100%;
+            }
+            .o button, .l button{
+                width: 100px;
+            }
+            .b{
+                width: 100%;
+            }
+            .bksouta{
+                width: 95%;
+                flex-wrap: wrap;
+                display: flex;
+                overflow-y: scroll;
+            }
+            .bksouta::-webkit-scrollbar{
+                width: 10px;
+            }
+            .bksouta::-webkit-scrollbar-track{
+                background-color: rgb(53, 53, 53);
+                border-radius: 10px;
+            }
+            .bksouta::-webkit-scrollbar-thumb{
+                background-color: white;
+                border-radius: 10px;
+            }
+            .about{
+                width: 100%;
+            }
+            .letter{
+                width: 100%;
+            }
+            .me{
+                width: 100%;
+            }
+            .idk{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="bks">
+            <br class="idk">
+            <h1>401 Error UNAUTHORIZED</h1>
+            <h1 style="visibility: hidden;">t</h1>
+            <div class="b">
+                <div class="o">
+                    <button onclick="goToPage()">Back</button>
+                </div>
+                <div class="l">
+                    <button onclick="alert('401 UNAUTHORIZED, click back')">Help</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="outa">
+        <div class="bksouta">
+            <div class="about">
+                <h1>ABOUT ME</h1>
+                <p style="visibility: hidden;">W</p>
+                <p>Hello! I'm using Whatsapp, Line, Tiktok, and Instagram. You're FREE to say to me anytime! Have a nice day!<span style="filter: grayscale();">😁</span></p>
+                <p style="visibility: hidden; font-size: 20px;">W</p>
+                <p>Copyright @2026 All rights reserved | This template is made with # by <span style="color: cornflowerblue; cursor: pointer;">colorib</span></p>
+            </div>
+            <div class="letter">
+                <h1>NEWSLETTER</h1><br>
+                <p>Stay updated with our latest trends</p>
+                <p style="visibility: hidden;">W</p>
+                <input type="email" placeholder=" Enter email address" id="input"><button onclick="getMessage()">--></button>
+            </div>
+            <div class="me">
+                <h1>FOLLOW ME</h1><br>
+                <p>Let us be social</p>
+                <p style="visibility: hidden;">W</p>
+                <div class="im">
+                    <img src="c:\Users\dell\Documents\koding\icon\twitter.png" alt="" onclick="goToTwitter()">
+                    <img src="c:\Users\dell\Documents\koding\icon\instagram.png" alt="" onclick="goToInstagram()">
+                    <img src="c:\Users\dell\Documents\koding\icon\facebook.png" alt="" onclick="goToFacebook()">
+                    <img src="c:\Users\dell\Documents\koding\icon\whatsapp.png" alt="" onclick="goToWhatsapp()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function goToPage() {
+            window.location.href = "pages.html";
+        }
+        function getMessage() {
+            document.getElementById("input").value = "";
+        }
+        function goToTwitter() {
+            window.location.href = "https://x.com/";
+        }
+        function goToInstagram() {
+            window.location.href = "https://www.instagram.com/";
+        }
+        function goToFacebook() {
+            window.location.href = "https://www.facebook.com/login/";
+        }
+        function goToWhatsapp() {
+            window.location.href = "https://web.whatsapp.com/";
+        }
+    </script>
+</body>
+</html>

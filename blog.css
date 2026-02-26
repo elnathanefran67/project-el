@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*::-webkit-scrollbar{
+    overflow: hidden;
+}
+.atas{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right{
+    width: 50%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.atas a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.atas a:hover{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.mid{
+    width: 100%;
+    height: 87vh;
+    text-align: center;
+}
+.mid p{
+    color: grey;
+}
+.d{
+    width: 60%;
+    height: 55vh;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.k{
+    width: 30%;
+    height: 54vh;
+    text-align: start;
+}
+.k p{
+    font-size: 12px;
+}
+img{
+    transition: transform 2s ease-in-out;
+    animation: kang 2s ease alternate;
+}
+
+@media(max-width:376px){
+    .atas{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+        justify-content: space-between;
+        gap: 6%;
+    }
+    .right a{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .d{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .k{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .right::-webkit-scrollbar{
+       height: 5px;
+    }
+    .right::-webkit-scrollbar-track{
+        border-radius: 10px;
+    }
+    .right::-webkit-scrollbar-thumb{
+        background-color: rgb(53, 53, 53);
+        border-radius: 10px;
+    }
+}
+@keyframes kang{
+    0%{
+        transform: translateX(0vw) translateY(0vw);
+        opacity: 0%;
+    }
+    33%{
+        transform: translateX(-5vw) translateY(0);
+        opacity: 33%;
+    }
+    67%{
+        transform: translate(5vw, 0);
+        opacity: 67%;
+    }
+    100%{
+        transform: translateX(0vw) translateY(0vw);
+        opacity: 100%;
+    }
+}

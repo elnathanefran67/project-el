@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*::-webkit-scrollbar{
+    overflow: hidden;
+}
+.out{
+    width: 100%;
+    height: 100vh;
+}
+.atas{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.l{
+    width: 10%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.k{
+    width: 50%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.k a{
+    text-decoration: none;
+}
+.mid{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bks-mid{
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+}
+.t{
+    width: 40%;
+    height: 55vh;
+    text-align: start;
+    align-self: flex-end;
+}
+.t button{
+    color: white;
+    background: linear-gradient(to right, brown, orangered, yellow);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    background-size: 400% 400%;
+    animation: man 5s ease-in-out infinite;
+}
+.t button:hover{
+    transform: scale(1.5);
+    transition: transform 0.5s ease-in-out;
+    background: linear-gradient(to right, brown, red, orangered, yellow);
+    color: blue;
+}
+.atas a{
+    font-size: 20px;
+    color: black;
+}
+.atas a:hover{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media(max-width:376px){
+    .atas{
+        height: 24vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .l{
+        width: 100%;
+        height: 12vh;
+    }
+    .k{
+        width: 100%;
+        height: 12vh;
+        overflow-x: scroll;
+        display: flex;
+        justify-content: space-between;
+        gap: 7%;
+    }
+    .k a{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .mid{
+        width: 100%;
+        height: 35vh;
+    }
+    .bks-mid{
+        width: 90%;
+        align-self: flex-start;
+        flex-wrap: wrap;
+    }
+    .gbr{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+    }
+    .gbr img{
+        width: 60vw;
+    }
+    .t{
+        width: 110%;
+    }
+    .k::-webkit-scrollbar{
+       height: 5px;
+    }
+    .k::-webkit-scrollbar-track{
+        border-radius: 10px;
+    }
+    .k::-webkit-scrollbar-thumb{
+        background-color: rgb(53, 53, 53);
+        border-radius: 10px;
+    }
+}
+
+@keyframes man{
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
