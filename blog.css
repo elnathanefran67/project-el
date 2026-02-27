@@ -59,7 +59,7 @@ img{
     animation: kang 2s ease alternate;
 }
 
-@media(max-width:376px){
+@media(max-width:391px){
     .atas{
         width: 100%;
     }
