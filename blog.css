@@ -55,8 +55,12 @@
     font-size: 12px;
 }
 img{
-    transition: transform 2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     animation: kang 2s ease alternate;
+}
+img:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
 }
 
 @media(max-width:391px){
