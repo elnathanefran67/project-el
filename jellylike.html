@@ -80,13 +80,11 @@ let mouseY = 0;
 let currentX = 0;
 let currentY = 0;
 
-/* Smooth follow effect */
 document.addEventListener("mousemove", (e) => {
   mouseX = e.clientX - 100;
   mouseY = e.clientY - 100;
 });
 
-/* Animation loop for smooth motion */
 function animate() {
   currentX += (mouseX - currentX) * 0.15;
   currentY += (mouseY - currentY) * 0.15;
