@@ -181,14 +181,19 @@ span:hover{
         margin-right: 20px;
     }
     .mid{
-        width: 98%;
+        width: 100%;
         flex-wrap: wrap;
         justify-self: center;
+        margin: 10px;
     }
     .ki{
-        width: 100%;
+        width: 110%;
         height: 60vh;
         flex-wrap: wrap;
+    }
+    .logo{
+        width: 100%;
+        gap: 0;
     }
     .ka{
         width: 100%;
@@ -196,7 +201,8 @@ span:hover{
     }
     .one p, .two p, .three p{
         display: flex;
-        margin-left: -15px;
+        margin-left: -17px;
+        flex-wrap: wrap;
     }
     .one h3, .two h3, .three h3{
         margin-left: -15px;
@@ -204,7 +210,6 @@ span:hover{
     }
     .one, .two, .three{
         width: 100%;
-        flex-wrap: wrap;
     }
     .one h1, .two h1, .three h1{
         margin-left: -20px;
