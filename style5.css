@@ -25,13 +25,16 @@
     justify-content: center;
 }
 .l h1:hover{
-    width: 80%;
-    height: 8vh;
+    width: 200%;
+    height: 200vh;
     background-color: black;
+    position: absolute;
     color: white;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
+    /* kode dari youtube */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
     box-shadow: 0 0 5px black, 0 0 20px black, 0 0 50px black, 0 0 100px black;
